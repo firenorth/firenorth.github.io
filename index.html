@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://expensemate.gradestage.com/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>ExpenseMate</title>
+    
+    <!-- <link href="./dist/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet"> -->
+    <script id="facebook-jssdk" src="./index_files/xfbml.customerchat.js"></script><script src="./index_files/jquery.js"></script>
+    <script src="./index_files/jquery-ui.js"></script>
+    <link href="./index_files/jquery.timepicker.css" rel="stylesheet">
+    <script src="./index_files/jquery.timepicker.min.js"></script>
+    <script src="./index_files/date.format.js"></script>
+    <script src="./index_files/jquery.csv.min.js"></script>
+    <script src="./index_files/shorthash.js"></script>
+
+
+    <link rel="stylesheet" href="./index_files/custom.css">
+    <link rel="stylesheet" type="text/css" href="./index_files/css">
+    <link rel="stylesheet" href="./index_files/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!--link href="jquery-ui.css" rel="stylesheet">
+    <script src="external/jquery/jquery.js"></script>
+    <script src="jquery-ui.js"></script-->
+
+<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#1d3c78;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_in_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_out_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bubble_pop_in{animation-duration:250ms;animation-name:fb_customer_chat_bubble_bounce_in_animation}.fb_customer_chat_bubble_animated_no_badge{box-shadow:0 3px 12px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_no_badge:hover{box-shadow:0 5px 24px rgba(0, 0, 0, .3)}.fb_customer_chat_bubble_animated_with_badge{box-shadow:-5px 4px 14px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_with_badge:hover{box-shadow:-5px 8px 24px rgba(0, 0, 0, .2)}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_v2_mobile_chat_started{0%{opacity:0;top:20px}100%{opacity:1;top:0}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_v2_mobile_chat_started{0%{opacity:1;top:0}100%{opacity:0;top:20px}}@keyframes fb_customer_chat_bubble_bounce_in_animation{0%{bottom:6pt;opacity:0;transform:scale(0, 0);transform-origin:center}70%{bottom:18pt;opacity:1;transform:scale(1.2, 1.2)}100%{transform:scale(1, 1)}}</style></head>
+
+<body cz-shortcut-listen="true">
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./index_files/d_vbiawPdxB.html" style="border: none;"></iframe></div></div><div class="fb-customerchat fb_invisible_flow fb_iframe_widget" attribution="setup_tool" page_id="191879045067971" theme_color="#f55912" logged_in_greeting="Hi there! Welcome to Expense Mate, let us know how we can help you?" logged_out_greeting="Hi there! Welcome to Expense Mate, let us know how we can help you?" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;attribution=setup_tool&amp;container_width=0&amp;locale=en_US&amp;logged_in_greeting=Hi%20there!%20Welcome%20to%20Expense%20Mate%2C%20let%20us%20know%20how%20we%20can%20help%20you%3F&amp;logged_out_greeting=Hi%20there!%20Welcome%20to%20Expense%20Mate%2C%20let%20us%20know%20how%20we%20can%20help%20you%3F&amp;page_id=191879045067971&amp;sdk=joey&amp;theme_color=%23f55912"><span style="vertical-align: top; width: 0px; height: 0px; overflow: hidden;"><iframe name="f12afef4f99a428" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="" src="./index_files/customerchat.html" style="border: none; visibility: visible; width: 0px; height: 0px;"></iframe></span></div></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    
+
+    <!-- This line includes the logo image -->
+    <header>
+        <img src="./index_files/logo_reversed.svg" alt="">
+    </header>
+
+    <!-- This line can be enabled to show the results of input validation -->
+    <div id="input_validation_area" hidden="true" style="display: none;">
+        <i class="fas fa-exclamation-triangle"></i> 
+        <span id="input_validation_message">Input Validation Error</span>
+    </div>
+    
+    <article id="page1" hidden="true" style="display: block;">
+        <h1>
+            Get your budget to beat!
+        </h1>
+
+        <!-- Email Layer -->
+        <section id="email_layer">
+            <div id="email_area">
+                <input type="email" autocomplete="on" id="email_input" placeholder="Email Address">
+            </div>
+        </section>
+
+        <!-- CompanyID Layer -->
+        <section id="company_layer">
+            <div id="company_area">
+                <input type="password" id="company_input" placeholder="Company ID">
+            </div>
+        </section>
+
+           <!-- This is the LOGIN button line -->
+        <section class="button-group" id="login_layer">
+            <input type="button" id="login_button" onclick="login_button_clicked()" class="ui-button ui-corner-all ui-widget" role="button" value="Start Your Trip">
+        </section>
+    </article>
+
+    <article id="page2" hidden="true" style="display: none;">
+        <h1>
+            Tell us about your trip
+        </h1>
+
+        <!-- this is the AIRPORT ENTRY line -->
+        <section id="input_widgets_line_1">
+            <h2 id="journey-title">
+                Where are you going?
+            </h2>
+            <div class="column-wrapper">
+                <div class="column half">
+                    <div class="autocomplete-wrapper autocomplete-airport-1"><input type="text" id="autocomplete-airport-1" placeholder="From" onchange="checkIATAOrigin(this)"><div class="autocomplete-results autocomplete-airport-1"></div></div>
+                </div>
+                <div class="column half">
+                    <div class="autocomplete-wrapper autocomplete-airport-2"><input type="text" id="autocomplete-airport-2" placeholder="To" onchange="checkIATADestination(this)"><div class="autocomplete-results autocomplete-airport-2"></div></div>
+                </div>
+        </div></section>
+
+        <!-- this is the FLIGHT DATES line -->
+        <section id="input_widgets_line_2">
+            <h2 id="dates-title">
+                When are you travelling?
+            </h2>
+            <div class="column-wrapper">
+                <div class="column half">
+                    <input type="text" id="start-date" readonly="true" placeholder="Departure Date" class="hasDatepicker">
+                </div>
+                
+                <div class="column half">
+                    <!--input type="date" id="end-date" value="23/01/2017" max="23/01/2019" min="23/01/2016"-->
+                    <input type="text" id="end-date" readonly="true" placeholder="Return Date" class="hasDatepicker">
+                </div>
+            </div>
+        </section>
+
+        <!-- this is the FLIGHT TIMES line -->
+
+        <!-- this is the EXACT_DATES checkbox line -->
+        <section id="input_widgets_line_4" style="display: none;">
+            <div class="switch">
+                <input type="checkbox" id="exact-dates">
+                <span class="slider round"></span>
+                <label for="exact-dates">Choose Exact Times</label>
+            </div>
+        </section>
+
+        <section id="input_widgets_line_3" style="display: none;">
+            <h2 id="dates-title">
+                Travel times:
+            </h2>
+
+            <div class="column-wrapper">
+                <div class="column half">
+                    <input type="text" id="start-time" placeholder="Arrival Before" class="ui-timepicker-input" autocomplete="off">                
+                </div>
+                <div class="column half">
+                    <!--input type="date " id="end-date " value="23/01/2017 " max="23/01/2019 " min="23/01/2016 "-->
+                    <input type="text" id="end-time" placeholder="Return Before" class="ui-timepicker-input" autocomplete="off">                
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- This is the SUBMIT button line -->
+        <section class="button-group">
+            <input type="button" id="submit_do_yourself" onclick="submit_button_clicked()" value="Get your Budget" class="ui-button ui-corner-all ui-widget" role="button">
+        </section>
+
+        <!-- Notes Layer -->
+        <section class="notes">
+            <div>
+                <p>
+                    We'll estimate the cost of your trip based on market rates and your company policy for the dates you'll be there. All flights are round trip.
+                </p>
+            </div>
+        </section>
+    </article>
+
+    <article id="page3" hidden="true" style="display: none;">
+        <!-- This is the BUDGET or results area that can be enabled -->
+        <section class="results" id="budget_to_beat_area">
+            <h1 id="budget_to_beat_results">The Results are in!</h1>
+            <ul>
+                <!-- <span id="budget_to_beat_dates"> No dates provided&hellip;</span> -->
+                <!-- <span id="budget_to_beat_iata"> No airport data provided&hellip;</span> -->
+                <li>
+                    <i class="fas fa-fw fa-plane-departure"></i>
+                    <span id="budget_to_beat_flights"> No Flight Data Obtained…</span>
+                </li>
+                <li>
+                    <i class="fas fa-fw fa-bed"></i>
+                    <span id="budget_to_beat_hotels"> Still fetching accommodation prices…</span>
+                </li>
+                <li>
+                    <i class="fas fa-fw fa-utensils"></i>
+                    <span id="budget_to_beat_meals"> Still fetching meal prices…</span>
+                </li>
+
+                <li class="results__total">
+                    <span>
+                        <h4>Your Overall Budget to Beat is:</h4>
+                        <h3 id="budget_to_beat_total">$0.00</h3>
+                    </span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="button-group">
+            <a class="button ui-button ui-corner-all ui-widget" id="savebudget" value="Save Budget" onclick="save_button_clicked()" role="button"> Save Budget </a>
+            <a class="button button--secondary ui-button ui-corner-all ui-widget" id="recalculate" onclick="recalculate_button_clicked()" value="Recalculate" role="button"> Recalculate </a>
+        </section>
+
+        <!-- Notes Layer -->
+        <section class="notes">
+            <div id="notes_area_budget">
+                <p id="notes_area_budget">
+                    * Meals are split $10 for breakfast, $20 for lunch and $40 for dinner. Bonus points for submitting public transport receipts instead of using taxis, or ridesharing services.
+                </p>
+            </div>
+        </section>
+    </article>
+
+    <article id="page4" hidden="true" style="display: none;">
+         <!-- This is the SAVED or final area that can be enabled -->
+        <section id="budget_saved_area">
+            <div class="confirmation">
+                
+                <h1>
+                    All done! <br>
+                    <em>Next steps…</em>
+                </h1>
+
+                <ul class="list--custom-numbered">
+                    <li>
+                        <i class="far fa-fw fa-envelope"></i>
+                        You'll receive an email with your trip ID shortly
+                    </li>
+                    <li>
+                        <i class="fas fa-fw fa-plane"></i>
+                        Book your travel below, or through your preferred websites
+                    </li>
+                    <li>
+                        <i class="fas fa-fw fa-file-invoice-dollar"></i>
+                        Send booking receipts back to the email address provided
+                    </li>
+                    <li>
+                        <i class="fas fa-fw fa-award"></i>
+                        <b>Get rewarded!</b>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+        <section class="button-group">
+
+            <div data-skyscanner-widget-loaded="true"><span class="skyscanner-widget-container" data-radium="true"><a href="https://www.skyscanner.net/g/widget-server/v1.0/en-GB/AU/AUD/widgets/BasicWidget/refer?referrer=http%3A%2F%2Fexpensemate.gradestage.com%2F" target="_blank"><span class="skyscanner-widget basic-widget" style="-moz-box-sizing:border-box;all:initial;display:inline-block;width:100%;max-width:500px;background-position:95% 50%;background-repeat:no-repeat;cursor:pointer;border-radius:6px;border:none;box-sizing:border-box;background-color:#aae700;color:#34363d;background-image:url(https://www.skyscanner.net/g/widget-server/flight-icon.svg?colour=%2334363d&amp;v=546045);padding:8px 55px 8px 20px;" data-radium="true"><link href="./index_files/css(1)" rel="stylesheet" type="text/css"><span class="skyscanner-widget-text" style="all:initial;cursor:pointer;font:600 18px Source Sans Pro, sans-serif;text-decoration:none;display:inline-block;color:#34363d;" data-radium="true">Search for flights</span></span></a></span></div>
+            <script src="./index_files/loader.js"></script>
+            <!--a href="http://jetradar.com/?marker=193910" target="_blank" id="affiliate_flights" value="Search for Flights" style="width:100%;padding:0.75em;color:#212534;font-weight:bold"> Book Flights </a-->
+            <!--a class="ui-corner-all" target="_blank" href="http://search.hotellook.com/?marker=193910&language=en" id="affiliate_hotels" value="Search for Hotels" style="width:100%;padding:0.75em;color:#212534;font-weight:bold"> Book Hotels</a-->
+            <a class="button button--primary ui-button ui-corner-all ui-widget blueButton" target="_blank" href="http://www.tripadvisor.com/" id="affiliate_hotels" value="Search for Hotels" role="button"> Book your Accommodation</a>
+
+            <a class="button button--secondary ui-button ui-corner-all ui-widget greyButton" id="recalculate2" onclick="recalculate_button_clicked()" value="Recalculate" role="button"> Recalculate
+            </a>
+
+            <a class="button button--outline button--exit" href="http://www.expensemate.com.au/">
+                <i class="fas fa-fw fa-check"></i> Finish
+            </a>
+        </section>
+    </article>
+
+    <!-- This is an ERROR report error that can be enabled -->
+    <article id="error_reporting_area" hidden="true" style="display: none;">
+        <h1>Sorry!</h1>
+        <section>
+            <h2>There was a problem..</h2>
+            <p id="error_message">There has been an error</p>
+
+        </section>
+        <section class="button-group">
+            <a class="button button-secondary ui-button ui-corner-all ui-widget greyButton" id="recalculate3" onclick="recalculate_button_clicked()" value="Recalculate" role="button">Go back</a>
+        </section>
+    </article>
+
+
+    <footer>
+        <a class="exit" href="http://www.expensemate.com.au/">
+            <i class="fas fa-arrow-left"></i> Exit
+        </a>
+    </footer>
+
+    <!-- Debug layer -->
+    <div id="debug_layer" hidden="true" style="display: none;">
+        <p id="start_location_debug"> DEBUG </p>
+        <p id="end_location_debug"> DEBUG </p>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="modal">
+        <svg id="loading-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110">
+            <polygon class="slice slice-1" points="55 27.78 31.38 41.42 31.38 68.69 36.15 71.32 36.4 44.38 59.97 30.65 55 27.78" fill="#00e8db"></polygon>
+            <polygon class="slice slice-2" points="64.08 33.05 40.46 46.69 40.46 73.96 45.23 76.59 45.48 49.66 69.05 35.92 64.08 33.05" fill="#00e8db"></polygon>
+            <path class="slice slice-3" d="M73.65,38.68,50,52.31V79.59l4.77,2.63.25-26.94L78.62,41.55ZM61.59,59v5.81L74.87,57l-5-2.87Zm0,11.85v5.82l13.28-7.74L69.9,66Z" fill="#00e8db"></path>
+        </svg>
+        <span id="LoadingText">Loading...</span>
+    </div>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#affiliate_hotels').each(function() {
+		var a = new RegExp('/' + window.location.host + '/');
+		if(!a.test(this.href)) {
+			$(this).click(function(event) {
+				event.preventDefault();
+				event.stopPropagation();
+				window.open(this.href, '_blank');
+			}
+			);
+		}
+	}
+	);
+    $('#affiliate_flights').each(function() {
+		var a = new RegExp('/' + window.location.host + '/');
+		if(!a.test(this.href)) {
+			$(this).click(function(event) {
+				event.preventDefault();
+				event.stopPropagation();
+				window.open(this.href, '_blank');
+			}
+			);
+		}
+	}
+	);
+}
+);
+</script>
+
+<!-- Include a script to help autocomplete airports -->
+<script src="./index_files/index.browser.min.js"></script>
+
+<script>
+    console.log("ExpenseMate Form Loading...");
+
+    /*************************
+     * Global Variables
+     *************************/
+    var start_location = "None";
+    var end_location = "None";
+    var dateFrom = "None";
+    var returnFrom = "None";
+    var latestArrival = "None";
+    var latestReturnBy = "None";
+    var latestArrival_Local = "";
+    var latestReturnBy_Local = "";
+    var dateFrom_Local = "";
+    var dateTo_Local = "";
+    var store_url_parameters = "";
+    var userEmail = "";
+    var companyID = "";
+    var meal_price_perday= 30;
+    var meal_price_pernight = 40;
+    var number_of_nights = -1;
+    var hotel_price_per_night = 0;
+    var flight_totals = 0;
+    var currency = "AUD";
+    var currency_symbol = "$";
+    var flights_min = 0;
+    var flights_max = 0;
+    var flights_med = 0;
+    var trip_total = 0;
+    var start_country = "";
+    var end_country = "";
+    var flights_limit = 0;
+    var additional_notes = "Meals are split $10 for breakfast, $20 for lunch and $40 for dinner. Entertainment budget is $100 per head. Bonus points for submitting public transport receipts instead of using taxis, or ridesharing services.";
+
+    /*************************
+     * JQUERY Elements
+     *************************/
+    $body = $("body");
+    $("#submit_do_yourself").button();
+    $("#login_button").button();
+    $("#login_button").button().prop('value', 'Start Your Trip');
+    $("#recalculate").button();
+    $("#recalculate").button().prop('value', 'Recalculate');
+    $("#recalculate2").button();
+    $("#recalculate2").button().prop('value', 'Recalculate');
+    $("#recalculate2").button().addClass('greyButton');
+    $("#recalculate3").button();
+    $("#recalculate3").button().prop('value', 'Recalculate');
+    $("#recalculate3").button().addClass('greyButton');
+    $("#savebudget").button();
+    $("#savebudget").button().prop('value', 'Save Budget');
+    $("#affiliate_hotels").button();
+    $("#affiliate_hotels").button().addClass('blueButton');
+    $("#affiliate_flights").button();
+    $("#affiliate_flights").button().addClass('greenButton');
+
+
+    // Hide Error / Output Areas
+    $('#page1').show();
+    $('#page2').hide();
+    $('#page3').hide();
+    $('#page4').hide();
+    $('#error_reporting_area').hide();
+    $('#input_validation_area').hide();
+    $("#input_widgets_line_3").hide();
+    $("#input_widgets_line_4").hide();
+    $("#debug_layer").hide();
+
+    document.getElementById("exact-dates").addEventListener("change", function() {
+        console.log("Checked: " + this.checked);
+
+        if (this.checked)
+            $("#input_widgets_line_3").show();
+        else
+            $("#input_widgets_line_3").hide();
+    });
+
+    console.log("Prepared user iterface panels");
+
+    ClearInput();
+
+    $(function() {
+        $("#start-time").timepicker({
+            'timeFormat': 'G:i',
+            'noneOption': {
+                'label': 'Any',
+                'value': 'Any'
+            }
+        });
+        $('#start-time').on('changeTime', function() {
+            latestArrival = $("#start-time").val();
+        });
+
+        $("#end-time").timepicker({
+            'timeFormat': 'G:i',
+            'noneOption': {
+                'label': 'Any',
+                'value': 'Any'
+            }
+        });
+        $('#end-time').on('changeTime', function() {
+            latestReturnBy = $("#end-time").val();
+        });
+
+        $("#start-date").datepicker({
+            dateFormat: 'yy-mm-dd',
+            inline: true,
+            firstDay: 1,
+            onSelect: function() {
+                dateFrom = $("#start-date").datepicker("getDate");
+                dateFrom = $.datepicker.formatDate("dd/mm/yy", dateFrom);
+            }
+        });
+
+        $("#end-date").datepicker({
+            dateFormat: 'yy-mm-dd',
+            inline: true,
+            firstDay: 1,
+            onSelect: function() {
+                returnFrom = $("#end-date").datepicker("getDate");
+                returnFrom = $.datepicker.formatDate("dd/mm/yy", returnFrom);
+            }
+        });
+
+        // $(document).ready(function() {
+        //     $('#LoadingText').css({
+        //         'width': '100%',
+        //         'text-align': 'center'
+        //     });
+        //     var h1 = $('h1').height();
+        //     var h = (h1 / 2) - 40;
+        //     var w1 = $(window).height();
+        //     var w = w1 / 2;
+        //     var m = w - h
+        //     $('#LoadingText').css("margin-top", m + "px")
+        // });
+
+        $(".checkbox").checkboxradio();
+    })
+
+    console.log("Prepared user iterface input");
+
+    /*************************
+     * Handle Input
+     *************************/
+    function submit_button_clicked() {
+
+        ResetAllValidationIssues();
+
+        var validated = ValidateInput();
+
+        if (validated) {
+            // 1. Add Loading Indicator
+            $body.addClass("loading");
+            // 2. Hide UI controls, input has been validated
+            $("#page2").hide();
+            //$("#input_widgets_line_1").hide();
+            //$("#input_widgets_line_2").hide();
+            //$("#input_widgets_line_3").hide();
+            //$("#input_widgets_line_4").hide();
+            //$("#input_widgets_line_5").hide();
+            //$("#notes_layer").hide();
+
+            // 3. Calculate data we can get on the spot
+            number_of_nights = nights_between(dateFrom, returnFrom);
+            DoMealPrices();
+
+            // 4. Get the hotels data
+            // do async call before flights requerst because it is
+            // currently just to get csv data from the server and so
+            // should be quicker that the flights data
+            AsyncDoHotelPrices();
+
+            // 5. Get local fights data
+            // do async call before flights requerst because it is
+            // currently just to get csv data from the server and so
+            // should be quicker that the flights data
+            AsyncDoFlightLimitPrices();
+
+            // 6. Finally get the flights data whilst the hotels data lookup is running
+            var url = CreateFlightsRequest();
+            console.log(url);
+            DoFlightsRequest(url);
+        }
+    }
+
+    function recalculate_button_clicked()
+    {
+        ClearInput();
+        PrefillInput();
+        $("#page1").hide();
+        $("#page2").show();
+        $("#page3").hide();
+        $("#page4").hide();
+        $('#error_reporting_area').hide();
+    }
+
+    function save_button_clicked() {
+        var tripID = unique(userEmail + companyID) + "-" +  Date.now();
+
+        var date = new Date();
+        var str = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + " " +  date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+
+        var url_base = "https://nkryc58wqg.execute-api.us-west-2.amazonaws.com/default/ExpenseMateFormInput?"
+        var url_parameters = store_url_parameters + "&tripID=" + tripID + "&customerID=" + encodeURIComponent(companyID) + "&dateNow=" + str + "&userEmail=" + encodeURIComponent(userEmail) + "&flights_min=" + flights_min + "&flights_med=" + flights_med + "&flights_max=" + flights_max + "&flights_total=" + flight_totals + "&meal_pernight=" + meal_price_pernight + "&meal_perday=" + meal_price_perday + "&hotel_pernight=" + hotel_price_per_night + "&nights=" + number_of_nights + "&additional_notes=" + encodeURIComponent(additional_notes) + "&total=" + trip_total + "&curr_symbol=" + encodeURIComponent(currency_symbol); 
+        var url = url_base + url_parameters;
+
+
+        console.log("Save Button Clicked: " + url);
+
+        $('#page3').hide();
+        $body.addClass("loading");
+        DoSaveQuoteRequest(url);
+    
+        //alert("The flight details have been emailed\nand stored online\n" + url);
+    }
+
+    function login_button_clicked() {
+
+        userEmail = $("#email_input").val();
+        companyID = $("#company_input").val();
+
+        var valid = ValidateLogin();
+
+        if (!valid)
+            return;
+        else
+        {
+            console.log("Validation Succeeded");
+            ResetValidationIssue("email_input");
+            ResetValidationIssue("company_input");
+
+            $("#page1").hide();
+            $("#page2").fadeIn(800);
+            $("#input_widgets_line_1").show();
+
+            console.log("Showing pages");
+        }
+    
+        //alert("The flight details have been emailed\nand stored online\n" + url);
+    }
+
+    /*************************
+     * Input Processing / Validation
+     *************************/
+    AirportInput("autocomplete-airport-1");
+    AirportInput("autocomplete-airport-2");
+
+    function checkIATAOrigin(self)
+    {
+        console.log("Set Origin");
+
+        setInterval(function() {
+            start_location = document.getElementById("autocomplete-airport-1").getAttribute("data-iata");
+            start_country = document.getElementById("autocomplete-airport-1").getAttribute("data-country");
+            
+            document.getElementById("start_location_debug").innerHTML = "Start Location: " + start_location;
+            if ((start_location == null)||(start_location == "None"))
+                document.getElementById("autocomplete-airport-1").value = "None";
+        }, 350);
+    }
+
+    function checkIATADestination(self)
+    {
+        console.log("Set Destination");
+
+        setInterval(function() {
+            end_location = document.getElementById("autocomplete-airport-2").getAttribute("data-iata");
+            end_country = document.getElementById("autocomplete-airport-2").getAttribute("data-country");
+            
+            document.getElementById("end_location_debug").innerHTML = "End Location: " + end_location;
+            if ((end_location == null)||(end_location == "None"))
+                document.getElementById("autocomplete-airport-2").value = "None";
+        }, 350);
+        
+    }
+
+    function ResetAllValidationIssues() {
+        ResetValidationIssue("journey-title");
+        ResetValidationIssue("dates-title");
+    }
+
+    function ResetValidationIssue(item) {
+        var $elem = $(document.getElementById(item));
+        $elem.parents('section').removeClass('invalid');
+
+        $('#input_validation_area').hide();
+        document.getElementById("input_validation_message").innerHTML = "Input Validation Error";
+    }
+
+    function ValidationIssue(item, message) {
+        var $elem = $(document.getElementById(item));
+        $elem.parents('section').addClass('invalid');
+
+        $('#input_validation_area').show().delay(4000).fadeOut();
+        document.getElementById("input_validation_message").innerHTML = message;
+    }
+
+    function ValidateLogin(){
+
+        var validated = true;
+
+        if ((companyID.length < 5))
+        {
+            ValidationIssue("company_input", "Invalid company ID");
+            validated = false;
+        }
+
+        if ((!userEmail.includes("@"))||(!userEmail.includes("."))||(userEmail.includes(" "))||(userEmail.includes("\&"))||(userEmail.includes("=")))
+        {
+            ValidationIssue("email_input", "Invalid email address");
+            validated = false;
+        }
+
+        return validated;
+    }
+
+    function ValidateInput() {
+        console.log("Form Data: origin:" + start_location + " destination:" + end_location + " dateFrom:" + dateFrom + " returnFrom:" + returnFrom);
+
+        if ((latestReturnBy == "None") || (latestReturnBy == "Any"))
+            latestReturnBy = "23:59";
+        if ((latestArrival == "None") || (latestArrival == "Any"))
+            latestArrival = "23:59";
+
+        var validated = true;
+
+        // Check Start Location is valid IATA code
+        if ((start_location == "None") || (start_location == null) || (start_location == undefined)) {
+            ValidationIssue("journey-title", "We need a origin airport to start planning");
+            validated = false;
+        }
+
+        // Check End Location is valid IATA code
+        if ((end_location == "None") || (end_location == null) || (end_location == undefined)) {
+            ValidationIssue("journey-title", "We need a destination airport to start planning");
+            validated = false;
+        }
+
+        // Check Date From is valid 
+        if ((dateFrom == "None") || (dateFrom == null) || (dateFrom == undefined)) {
+            ValidationIssue("dates-title", "We need a departure date to start planning");
+            validated = false;
+        }
+
+        // Check Date From is valid 
+        if ((returnFrom == "None") || (returnFrom == null) || (returnFrom == undefined)) {
+            ValidationIssue("dates-title", "We need a return date to start planning");
+            validated = false;
+        }
+
+        return validated;
+    }
+
+    function PrefillInput()
+    {
+        if ((end_location == "None") || (end_location == null) || (end_location == undefined)) {
+ 
+        }
+        else
+            document.getElementById("autocomplete-airport-2").value = end_location;
+
+
+        if ((start_location == "None") || (start_location == null) || (start_location == undefined)) {
+  
+        }
+        else
+            document.getElementById("autocomplete-airport-1").value = start_location;
+
+    }
+
+    function ClearInput() {
+        document.getElementById("autocomplete-airport-1").value = "";
+        document.getElementById("autocomplete-airport-2").value = "";
+        document.getElementById("start-date").value = "";
+        document.getElementById("end-date").value = "";
+        document.getElementById("start-time").value = "";
+        document.getElementById("end-time").value = "";
+        document.getElementById("exact-dates").checked = false;
+        $("#input_widgets_line_3").hide();
+        document.getElementById("LoadingText").innerHTML = "Loading...";
+    }
+
+    // function AJAXGetRequest() {
+    //     $.ajax({
+    //         type: "GET",
+    //         url: 'https://ghibliapi.herokuapp.com/films',
+    //         data: "{}",
+    //         contentType: "application/json; charset=utf-8",
+    //         dataType: "json",
+    //         success: function(data) {
+
+    //             console.log("AJAX Return");
+    //             console.log(data);
+    //             // //alert('success');
+    //             // $.each(data, function (i, theItem) {
+    //             //     var combo = document.getElementById("cboFastBikes");
+    //             //     var option = document.createElement("option");
+    //             //     option.text = theItem.toString();
+    //             //     option.value = theItem.toString();
+    //             //     try {
+    //             //         //alert('success add combo');
+    //             //         combo.add(option, null); // Other browsers
+    //             //     }
+    //             //     catch (error) {
+    //             //         alert('error found');
+    //             //         combo.add(option); // really old browser
+    //             //     }
+
+    //             // });
+    //         },
+    //         error: function(msg, url, line) {
+    //             alert('error trapped in error: function(msg, url, line)');
+    //             alert('msg = ' + msg + ', url = ' + url + ', line = ' + line);
+
+    //         }
+    //     });
+    // }
+
+    /**********************
+     * Time & Date Processing
+     **********************/
+
+    function localize(utcSeconds) {
+        var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
+        d.setUTCSeconds(utcSeconds);
+        return d;
+    }
+
+    function localizeDate(date) {
+        var UTC_time = getUTCSeconds(date); // The 0 there is the key, which sets the date to the epoch
+        d.setUTCSeconds(utcSeconds);
+        return d;
+    }
+
+    function addAWeek(the_date) {
+        the_time = the_date.getTime();
+        the_time += 7 * 24 * 60 * 60 * 1000;
+        return new Date(the_time);
+    }
+
+    function stringToDate(_date, _format, _delimiter) {
+        var formatLowerCase = _format.toLowerCase();
+        var formatItems = formatLowerCase.split(_delimiter);
+        var dateItems = _date.split(_delimiter);
+        var monthIndex = formatItems.indexOf("mm");
+        var dayIndex = formatItems.indexOf("dd");
+        var yearIndex = formatItems.indexOf("yyyy");
+        var month = parseInt(dateItems[monthIndex]);
+        month -= 1;
+        var formatedDate = new Date(dateItems[yearIndex], month, dateItems[dayIndex]);
+        return formatedDate;
+    }
+
+    function utc_datepicker_date(the_date_string) {
+        var date = stringToDate(the_date_string, "dd/mm/yyyy", "/");
+        date = new Date(date.toUTCString().substr(0, 25));
+        return date;
+    }
+
+    function datepicker_to_date(the_date_string) {
+        var date = stringToDate(the_date_string, "dd/mm/yyyy", "/");
+        return date;
+    }
+
+    function utc_date(the_date) {
+        var date = new Date(the_date.toUTCString().substr(0, 25));
+        return date;
+    }
+
+    function addTime(date, timeString) {
+        if (timeString == '') return null;
+
+        var time = timeString.match(/(\d+)(:(\d\d))?\s*(p?)/i);
+        if (time == null) return null;
+
+        var hours = parseInt(time[1], 10);
+        if (hours == 12 && !time[4]) {
+            hours = 12;
+        } else {
+            hours += (hours < 12 && time[4]) ? 12 : 0;
+        }
+        var d = date;
+        d.setHours(hours);
+        d.setMinutes(parseInt(time[3], 10) || 0);
+        d.setSeconds(0, 0);
+        return d;
+    }
+
+    function format_date(the_date) {
+        return dateFormat(the_date, "dd/mm/yyyy");
+    }
+
+    function nights_between(start_date, end_date)
+    {
+        console.log("Dates:");
+        console.log(start_date);
+        console.log(end_date);
+
+        var date1 = datepicker_to_date(start_date);
+        var date2 = datepicker_to_date(end_date);
+        console.log(date1);
+        console.log(date2);
+
+        var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+        var numberOfNights = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
+
+        console.log(numberOfNights + " nights"); 
+
+        return numberOfNights;
+    }
+
+
+    /**********************
+     * Meal Prices
+     **********************/
+
+    function DoMealPrices()
+    {
+        document.getElementById("budget_to_beat_meals").innerHTML =  
+            "<h4>Meals <span>(per day)</span></h4>" + 
+            "<h3>" + 
+            currency_symbol + (meal_price_perday + meal_price_pernight) + ".00" +
+            "<h3>"
+    }
+
+    /**********************
+     * Hotels Prices
+     **********************/
+
+    function AsyncDoHotelPrices()
+    {
+        console.log("Hotel Lookup: " + end_location);
+
+        document.getElementById("LoadingText").innerHTML = "Searching for accommodation and flights...";
+
+        $.ajax({
+            type: "GET",  
+            url: "dist/data/hotels_iata.csv",
+            dataType: "text",       
+            success: function(response)  
+            {
+                console.log("Hotel Lookup Returned")
+                //console.log(response);
+                data = $.csv.toObjects(response);
+                //console.log(data);
+
+                var price = "";
+                var generic_price = "";
+                var generic_price_per_night = -1;
+
+                for (var i = 0; i < data.length; i++)
+                {
+                    if (data[i]["IATA Code"] == end_location)
+                    {
+                        price = data[i]["Rates"];
+                        hotel_price_per_night = Number(data[i]["Rates"].replace(/[^0-9.-]+/g,""));
+                        console.log("Found price for: " + end_location);
+                        break;
+                    }
+
+                    if (data[i]["Country"] === "Generic")
+                    {
+                        generic_price = data[i]["Rates"];
+                        generic_price_per_night = Number(data[i]["Rates"].replace(/[^0-9.-]+/g,""));
+                    }
+                }
+
+                if ((generic_price != "")&&(price == ""))
+                {
+                    price = generic_price;
+                    hotel_price_per_night = generic_price_per_night;
+                    console.log("Using generic_price for: " + end_location);
+                }
+                
+                if (number_of_nights < 1)
+                {
+                    document.getElementById("budget_to_beat_hotels").innerHTML = "Accommodation not required";
+                }
+                else if (price != "")
+                    document.getElementById("budget_to_beat_hotels").innerHTML = 
+                    "<h4>Accommodation <span>(per night)</span></h4>" + 
+                    "<h3>" + 
+                    price + ".00" +
+                    "<h3>";
+
+                else
+                    document.getElementById("budget_to_beat_hotels").innerHTML = "Search returned no results";
+
+                document.getElementById("LoadingText").innerHTML = "Searching for flights and accommodation...";
+            }   
+        });
+    }
+
+    function AsyncDoFlightLimitPrices()
+    {
+        flights_limit = 0;
+
+        console.log("Flights local Lookup: " + end_location);
+
+        $.ajax({
+            type: "GET",  
+            url: "dist/data/flightlimits_iata.csv",
+            dataType: "text",       
+            success: function(response)  
+            {
+                console.log("Hotel Lookup Returned")
+                //console.log(response);
+                data = $.csv.toObjects(response);
+                //console.log(data);
+
+                for (var i = 0; i < data.length; i++)
+                {
+                    if ((data[i]["Origin"] == start_location)&&(data[i]["Destination"] == end_location))
+                    {
+                        flights_limit = Number(data[i]["Limit"]);
+                        console.log("Found flight limit for: " + end_location + " " + flights_limit + "["+data[i]["Limit"]+"]");
+                        break;
+                    }
+                }
+            }   
+        });
+    }
+
+    /**********************
+     * Flight Lookup API
+     **********************/
+
+    function ResponseError(status, message, type) {
+
+        ClearInput();
+
+        message = JSON.parse(message)
+
+        console.log("-- Error --");
+        console.log(status);
+
+        var outputMessage = message;
+
+        if (type === 'flights') {
+            outputMessage = message.message[0].errors[0];
+        }
+
+        console.log(outputMessage);
+
+        document.getElementById("error_message").innerHTML = outputMessage;
+
+        if (status == 0) {
+            document.getElementById("error_message").innerHTML = "Are you connected to the internet?";
+        }
+
+        if (status == 400) {
+            document.getElementById("error_message").innerHTML = "There was a probelm with your submission. Please try again!";
+        }
+
+        if (status = 408)
+        {
+            document.getElementById("error_message").innerHTML = outputMessage;
+        }
+
+        $body.removeClass("loading");
+
+        $('#page1').hide();
+        $('#page2').hide();
+        $('#page3').hide();
+        $('#page4').hide();
+        $("#error_reporting_area").show();
+    }
+
+    function ResponseComplete() {
+        ClearInput();
+
+        $body.removeClass("loading");
+
+        $('#page3').fadeIn(800);
+        $("#budget_to_beat_area").show();
+
+        console.log(Number(flight_totals,""));
+        console.log(Number(number_of_nights,""));
+        console.log(Number(hotel_price_per_night,""));
+        console.log("DateFrom: " + dateFrom);
+        console.log("ReturnDate: " + returnFrom);
+
+        trip_total = Number(flight_totals,"") + ((Number(number_of_nights,"") + 1) * (Number(meal_price_perday,"")))  + ((Number(number_of_nights,"")) * (Number(meal_price_pernight,""))) + ((Number(number_of_nights,"") * Number(hotel_price_per_night,"")));
+
+        // document.getElementById("budget_to_beat_iata").innerHTML = "Trip from: " + start_location + " to " + end_location;
+        // document.getElementById("budget_to_beat_dates").innerHTML = "Dates: " + dateFrom + " " + returnFrom;
+
+        document.getElementById("budget_to_beat_total").innerHTML = currency_symbol + trip_total + ".00";
+        //document.getElementById("notes_area_budget").innerHTML = "* " + additional_notes;
+        //document.getElementById("budget_to_beat_results").innerHTML = "Your budget from " + dateFrom + " to " + returnFrom + " is...";
+    }
+
+    function CreateFlightsRequest() {
+        var url_base = 'https://api.skypicker.com/flights?';
+        var url_parameters = "";
+        var url = "";
+
+        console.log("Exact_Dates: " + document.getElementById("exact-dates").checked);
+        var exact_dates = document.getElementById("exact-dates").checked;
+        //return;
+        //request.open('GET', 'https://api.havail.sabre.com/v1/historical/flights/fares?origin=SFO&destination=DFW&earliestdeparturedate=2015-04-20&latestdeparturedate=2015-04-22&lengthofstay=3', true);
+        //request.open('GET', 'https://api.skypicker.com/flights?flyFrom=SYD&to=LON&dateFrom=18/11/2018&dateTo=18/11/2018&curr=AUD&returnFrom=25/11/2018&returnTo=25/11/2018&sort=price&asc=1&limit=200&partner=picky', true);
+
+        if (exact_dates) {
+            var returnFrom_F = datepicker_to_date(returnFrom);
+            var dateFrom_F = datepicker_to_date(dateFrom);
+            returnFrom_F = addTime(returnFrom_F, latestReturnBy);
+            dateFrom_F = addTime(dateFrom_F, latestArrival);
+            returnFrom_F = utc_date(returnFrom_F);
+            dateFrom_F = utc_date(dateFrom_F);
+            var latestReturnBy_F = dateFormat(returnFrom_F, "hh:MM");
+            var latestArrival_F = dateFormat(dateFrom_F, "hh:MM");
+            dateFrom_F = format_date(dateFrom_F);
+            returnFrom_F = format_date(returnFrom_F);
+
+            store_url_parameters = 'flyFrom=' + start_location + '&to=' + end_location + '&dateFrom=' + dateFrom_F + '&dateTo=' + dateFrom_F + '&returnFrom=' + returnFrom_F + '&returnTo=' + returnFrom_F + '&atimefrom=00:00&atimeto=' + latestArrival_F + '&returnatimefrom=00:00&returnatimeto=' + latestReturnBy_F + "&curr=" + currency;
+            url_parameters = store_url_parameters + '&sort=price&asc=1&limit=200&partner=picky';
+            store_url_parameters += '&dateFromLocal=' + dateFrom + '&dateToLocal=' + dateFrom + '&returnFromLocal=' + returnFrom + '&returnToLocal=' + returnFrom + '&atimefromLocal=00:00&atimetoLocal=' + latestArrival + '&returnatimefromLocal=00:00&returnatimetoLocal=' + latestReturnBy;
+        } else {
+            console.log("FLEX DATES: ");
+            console.log("FLEX DATES: " + returnFrom);
+            console.log("FLEX DATES: " + dateFrom);
+
+            var returnFrom_F = utc_datepicker_date(returnFrom);
+            var dateFrom_F = utc_datepicker_date(dateFrom);
+
+            returnFrom = datepicker_to_date(returnFrom);
+            dateFrom = datepicker_to_date(dateFrom);
+
+            //var returnTo = addAWeek(returnFrom);
+            //var dateTo = addAWeek(dateFrom);
+
+            var returnTo = returnFrom;
+            var dateTo = dateFrom;
+
+            var returnTo_F = returnFrom_F;
+            var dateTo_F = dateFrom_F;
+
+            console.log(format_date(returnFrom) + " -> " + format_date(returnTo) + " | " + format_date(dateFrom) + " -> " + format_date(dateTo));
+
+            store_url_parameters = 'flyFrom=' + start_location + '&to=' + end_location + '&dateFrom=' + format_date(dateFrom_F) + '&dateTo=' + format_date(dateTo_F) + '&returnFrom=' + format_date(returnFrom_F) + '&returnTo=' + format_date(returnTo_F) + "&curr=" + currency;
+            url_parameters = store_url_parameters + '&sort=price&asc=1&limit=200&partner=picky';
+            store_url_parameters += '&dateFromLocal=' + format_date(dateFrom) + '&dateToLocal=' + format_date(dateTo) + '&returnFromLocal=' + format_date(returnFrom) + '&returnToLocal=' + format_date(returnTo);
+
+            // Done so format matches above later
+            dateFrom = format_date(dateFrom);
+            returnFrom = format_date(returnFrom);
+        }
+
+        //var url_parameters = 'flyFrom=' + start_location + '&to=' + end_location + '&dateFrom=' + dateFrom + '&dateTo=' + dateFrom + '&curr=AUD&returnFrom=' + returnFrom + '&returnTo=' + returnFrom + '&sort=price&asc=1&limit=25&partner=picky';
+        url = url_base + url_parameters;
+
+        return url;
+    }
+
+    function DoSaveQuoteRequest(url) {
+
+        var request = new XMLHttpRequest();
+        
+
+        console.log("AWS REST Request");
+        console.log(url);
+        request.open('GET', url, true);
+        request.setRequestHeader("x-api-key","Xwpjom5Se5bg2bJ3x43f6vwx6onq5dkhGBisIob0");
+
+        //request.onreadystatechange = function() {
+        //    console.log("REST Statechange");
+        //}
+
+        request.onload = function() {
+            console.log("AWS REST Response");
+
+            console.log(this.response);
+
+            // Begin accessing JSON data here
+            var data = JSON.parse(this.response);
+
+            console.log(data);
+            console.log(request.status);
+
+            if ((request.status != 200) && (request.status >= 400)) {
+                ResponseError(request.status, this.response, 'save');
+                // TODO: Handle Error in AWS response
+            } else {
+                console.log("Saved");
+                ClearInput();
+                $body.removeClass("loading");
+                $('#page4').fadeIn(800);
+            }
+        }
+
+        request.send();
+    }
+
+    function DoFlightsRequest(url) {
+
+        var request = new XMLHttpRequest();
+
+        console.log("REST Request");
+        console.log(url);
+        request.open('GET', url, true);
+
+        var tid = setTimeout(function doingTimeout() {
+                console.log("Timeout");
+                ResponseError(408, "Flights price search failed to respond, please try again later", 'flight prices');
+                request.close();
+            }, 15000);
+
+        request.onload = function() {
+            console.log("REST Response");
+            clearTimeout(tid);
+            // Begin accessing JSON data here
+            var data = JSON.parse(this.response);
+
+            console.log(data);
+            console.log(request.status);
+
+            if ((request.status != 200) && (request.status >= 400)) {
+                ResponseError(request.status, this.response, 'flights');
+            } else {
+                console.log(data.data);
+                console.log(data.data.length);
+
+                if (data.data.length > 0) {
+                    var med_index = data.data.length - 1;
+                    if (data.data.length > 1)
+                        med_index = Math.ceil(med_index / 2);
+
+                    var skypicker_min = data.data[0].price;
+                    var skypicker_med = data.data[med_index].price;
+                    var skypicker_max = data.data[data.data.length - 1].price;
+
+                    flights_min = skypicker_min;
+                    flights_med = skypicker_med;
+                    flights_max = skypicker_max;
+
+                    console.log("ResultMin: " + skypicker_min);
+                    console.log("ResultMed: " + skypicker_med);
+                    console.log("ResultNax: " + skypicker_max);
+
+                    console.log("AtimeMin: " + localize(data.data[0].aTimeUTC));
+                    console.log("AtimeMax: " + localize(data.data[data.data.length - 1].aTimeUTC));
+
+                    console.log("Nights In Dest: " + data.data[0].nightsInDest);
+                    console.log("Nights In Dest: " + data.data[data.data.length - 1].nightsInDest);
+
+                    console.log("RtimeMin: " + localize(data.data[0].returnaTimeUTC));
+                    console.log("RtimeMax: " + localize(data.data[data.data.length - 1].returnaTimeUTC));
+
+
+                    var international_adjust = 0;
+                    if (start_country==end_country)
+                        international_adjust = 125;
+
+                    console.log("Adding to flight totals: " + international_adjust + " " + flights_limit);
+
+                    // add a little of each, multiply minimum by a bit extra to scale it towards the median
+                    flight_totals = ((((1 * skypicker_min) + (0 * skypicker_med) + (0 * skypicker_max)) * 1.5) + international_adjust).toFixed(0);  
+
+                    if (flights_limit > 0)
+                    {
+                        console.log("flights_limit");
+                        console.log("Flight Limit: " + flights_limit);
+                        console.log("API Result: " + flight_totals);
+
+                        if (flight_totals > flights_limit)
+                        {
+                            console.log("totals_set");
+                            flight_totals = flights_limit;   
+                        }
+                    } 
+
+                    //document.getElementById("budget_to_beat").innerHTML = "Minimum: " + skypicker_min + " Middle: " + skypicker_med + " High: " + skypicker_max;
+                    document.getElementById("budget_to_beat_flights").innerHTML = 
+                        "<h4>Return Flights</h4>" + 
+                        "<h3>" + 
+                        currency_symbol + flight_totals + ".00" +
+                        "<h3>";
+                } else
+                    document.getElementById("budget_to_beat_flights").innerHTML = 
+                        "<h4>Return Flights</h4>" +
+                        "<h3 class='no-flights'>None Available!</h3>"; 
+
+
+                ResponseComplete();
+            }
+        }
+
+        request.send();
+    }
+</script>
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>
